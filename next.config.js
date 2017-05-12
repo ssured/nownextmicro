@@ -31,7 +31,7 @@ module.exports = {
                   : `/_next/-/${asset}`;
           },
           autoUpdate: 1000 * 60 * 5, // (five minutes)
-          __tests: dev ? { ignoreRuntime: true } : undefined, // hack to circumvent check of offlineplugin
+          __tests: dev ? { ignoreRuntime: true } : {}, // hack to circumvent check of offlineplugin
           ServiceWorker: null, // not implemented (yet)
           AppCache: {
             directory: './',
